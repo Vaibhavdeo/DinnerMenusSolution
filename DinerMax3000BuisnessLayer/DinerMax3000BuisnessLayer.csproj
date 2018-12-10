@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>DinnerMax3000.Business</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Update="dsDinnerMax3000.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>dsDinnerMax3000.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="dsDinnerMax3000.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsDinnerMax3000.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
